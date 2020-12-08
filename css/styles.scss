@@ -9,33 +9,25 @@
 @media (min-width: 992px) { ... }
 @media (min-width: 1200px) { ... }
 */
-// grid-template-areas:"rrss" "logo" "copy";
+
 @font-face {
-  font-family: 'Avenir';
-  src: local('Avenir'), local('Avenir'), url('../font/avenir/regular.woff') format('woff');
+  font-family: 'Franklin Gothic';
+  src: local('Franklin Gothic'), local('Franklin Gothic'), url('../font/FRABK.woff') format('woff');
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Avenir';
-  font-weight: 800;
-  src: local('Avenir Bold'), local('Avenir Bold'), url('../font/avenir/bold.woff') format('woff');
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Avenir';
+//   font-weight: 800;
+//   src: local('Avenir Bold'), local('Avenir Bold'), url('../font/avenir/bold.woff') format('woff');
+//   font-display: swap;
+// }
 
 
 @import "components/normalize";
 @import "components/variables";
-@import "components/paddings";
-@import "components/font";
-@import "components/button";
-@import "components/footer";
 @import "components/bootstrap";
-@import "components/gallery";
-@import "components/header";
 @import "components/aos";
-@import "components/form";
-@import "components/responsive";
 
 html,
 body {
@@ -43,7 +35,6 @@ body {
   font-size: 1rem;
   /* overflow-x: hidden; */
   list-style-position: inside;
-  font-family: $font;
   margin: 0;
   padding: 0;
 }

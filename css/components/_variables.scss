@@ -1,28 +1,30 @@
-$blue: #0067A3;
-$orange: #F88E2A;
-$green: #B4D336;
-$gray: #B3B3B3;
-$darkgray: #4D4D4D;
-$black: #000000;
-$white: #fff;
-$font: 'Avenir', sans-serif;
-$sides: ( "": "", "t": "top", "b": "bottom", "l": "left", "r": "right");
-$breakpoints: ( "": "", "xs": 576px, "sm": 768px, "md": 992px, "lg": 1200px, "xl": 1320px);
+$black:   #000    !default;
+$white:   #fff    !default;
+$blue:    #164CA1 !default;
+$indigo:  #6610f2 !default;
+$purple:  #a1169a !default;
+$pink:    #e83e8c !default;
+$red:     #e01f1f !default;
+$orange:  #F15A29 !default;
+$yellow:  #ffff24 !default;
+$green:   #0b8051 !default;
+$teal:    #20c997 !default;
+$cyan:    #003c80 !default;
 
-:root {
-  --black:  #000000;
-  --white:  #fff;
-  --darkgray:  #4D4D4D;
-  --gray: #B3B3B3;
-  --grey: #373737;
-  --light_blue: #124FA0;
-  --blue: #0067A3;
-  --dark_blue: #18283F;
-  --yellow: #F6EA03;
-  --green: #B4D336;
-  --font_family: 'Avenir', sans-serif;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-}
+$colors: () !default;
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+  ),
+  $colors
+);
