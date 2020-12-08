@@ -1,0 +1,28 @@
+$blue: #0067A3;
+$orange: #F88E2A;
+$green: #B4D336;
+$gray: #B3B3B3;
+$darkgray: #4D4D4D;
+$black: #000000;
+$white: #fff;
+$font: 'Avenir', sans-serif;
+$sides: ( "": "", "t": "top", "b": "bottom", "l": "left", "r": "right");
+$breakpoints: ( "": "", "xs": 576px, "sm": 768px, "md": 992px, "lg": 1200px, "xl": 1320px);
+
+:root {
+  --black:  #000000;
+  --white:  #fff;
+  --darkgray:  #4D4D4D;
+  --gray: #B3B3B3;
+  --grey: #373737;
+  --light_blue: #124FA0;
+  --blue: #0067A3;
+  --dark_blue: #18283F;
+  --yellow: #F6EA03;
+  --green: #B4D336;
+  --font_family: 'Avenir', sans-serif;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
