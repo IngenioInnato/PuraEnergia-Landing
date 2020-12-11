@@ -13293,6 +13293,12 @@ a:focus, button:focus, div:focus, input:focus, form:focus {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 991.98px) {
+  .float {
+    bottom: 15px;
+    right: 15px;
+  }
+}
 
 .float:hover {
   color: #FFF;
