@@ -26,9 +26,10 @@
 
 @import "components/normalize";
 @import "components/variables";
+@import "components/intl-tel-input";
 @import "components/bootstrap";
 @import "components/aos";
-
+// BEGIN GENERAL
 html,
 body {
   scroll-behavior: smooth;
@@ -44,3 +45,46 @@ body {
 a:focus, button:focus, div:focus, input:focus, form:focus {
   outline: none;
 }
+// END GENERAL
+// BEGIN intl-tel-input
+.iti__flag {background-image: url("../node_modules/intl-tel-input/build/img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("../node_modules/intl-tel-input/build/img/flags@2x.png");}
+}
+
+.iti{
+  width: 100%;
+  color: #000;
+  z-index: 9999;
+}
+// END intl-tel-input
+// BEGIN TEXT SHADOW
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+// END TEXT SHADOW
+// BEGIN Cambiar color de navbar
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(280, 90, 41)' stroke-linecap='round'  stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); 
+}
+// END Cambiar color de navbar
+// BEGIN Whatsapp
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:$green;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// END Whatsapp
