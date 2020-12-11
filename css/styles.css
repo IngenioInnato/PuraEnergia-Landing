@@ -13294,4 +13294,8 @@ a:focus, button:focus, div:focus, input:focus, form:focus {
   align-items: center;
 }
 
+.float:hover {
+  color: #FFF;
+}
+
 /*# sourceMappingURL=styles.css.map */
