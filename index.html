@@ -34,6 +34,35 @@
   <!-- Keywords -->
   <meta name="keywords" content="Consultores Pura Energía, Pura Energía, Energía Pura, Consultoría, Solar, Fotovoltaica, Baterías, Tesla, Placas, COVID-19, Hogares, Casados">
   
+  <!-- Pixel FB & Google Analythics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1CNBRE7H6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G1CNBRE7H6');
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1118392421937632');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1118392421937632&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+  
+  
   <link rel="stylesheet" href="./css/styles.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
@@ -76,10 +105,13 @@
         <a href="#S3" class="btn btn-primary btn-lg rounded-pill font-weight-bold"><h3 class="mb-0 py-2 px-3">CONTÁCTANOS AHORA</h3></a>
       </div>
       <div class="col-lg-6" data-aos="fade-up" data-aos-duration="3000">
-        <picture>
+        <div class="embed-responsive embed-responsive-16by9 shadow-lg">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h-p9T5r7w_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <picture>
           <source srcset="./img/mundo-paneles.webp" type="image/webp " alt="Mundo Paneles" title="Mundo Paneles" class="img-fluid" loading="lazy"> 
           <img src="./img/mundo-paneles.png" alt="Mundo Paneles" class="img-fluid" loading="lazy">
-        </picture>
+        </picture> -->
       </div>
     </div>
   </section>
@@ -90,13 +122,24 @@
     <div class="row">
       <div class="col-lg-6 order-lg-1 order-2">
         <picture>
-          <source srcset="./img/consultores.webp" type="image/webp" alt="Consultores Solares" title="Consultores Solares" class="img-fluid" loading="lazy"> 
-          <img src="./img/consultores.png" alt="Consultores Solares" class="img-fluid" loading="lazy">
+          <source srcset="./img/consultor.webp" type="image/webp" alt="Consultores Solares" title="Consultores Solares" class="img-fluid" loading="lazy"> 
+          <img src="./img/consultor.png" alt="Consultores Solares" class="img-fluid" loading="lazy">
         </picture>
       </div>
       <div class="col-lg-6 align-self-center order-lg-2 order-1 mb-lg-0 mb-5" >
-        <h5 class="mb-4"><strong class="text-secondary">No somos vendedores, somos especialistas en energías renovables</strong>  que entienden los estragos que pasa nuestra isla producto de la ineficiencia de la AEE, así como las empresas sin escrúpulos que han engañado a miles de puertorriqueños.</h5>
+        <h5 class="mb-lg-3 mb-5"><strong class="text-secondary">No somos vendedores, somos especialistas en energías renovables</strong>  que entienden los estragos que pasa nuestra isla producto de la ineficiencia de la AEE, así como las empresas sin escrúpulos que han engañado a miles de puertorriqueños.</h5>
+        <h3 class="text-center mb-lg-3 mb-5">Partners</h3>
+        <div class="d-flex align-self-center mb-" style="justify-content: space-evenly;">
+          <picture>
+            <source srcset="./img/partners/pura-energia.webp" type="image/webp" alt="Pura Energia" title="Pura Energia" class="img-fluid" loading="lazy"> 
+            <img src="./img/partners/pura-energia.png" alt="Pura Energia" class="img-fluid" loading="lazy">
+          </picture>        
+          <picture>
+            <source srcset="./img/partners/sunnova.webp" type="image/webp" alt="Sunnova" title="Sunnova" class="img-fluid" loading="lazy"> 
+            <img src="./img/partners/sunnova.png" alt="Sunnova" class="img-fluid" loading="lazy">
+          </picture>
         </div>
+      </div>
     </div>
   </section>
   <!-- END SECCIÓN 2 -->
@@ -245,7 +288,9 @@
   <!-- BEGIN SECCIÓN 4 -->
   <section id="S4" class="container py-5">
     <div class="row justify-content-center">
-      <div class="col-lg-8"><h2 class="text-primary text-center font-weight-bold mb-5 text-shadow">Última oportunidad para cambiarte a energía solar, los espacios están limitados debido a la pandemia</h2></div>
+      <div class="col-lg-8">
+        <h2 class="text-primary text-center font-weight-bold mb-5 text-shadow">Última oportunidad para cambiarte a energía solar, los espacios están limitados debido a la pandemia</h2>
+      </div>
       <div class="w-100"></div>
       <div class="col-lg-4 mb-5 text-center">
         <picture>
@@ -283,7 +328,8 @@
         </picture>
         <h4 class="text-center font-weight-bold">Instalación incluida</h4>
       </div>
-    </section>
+    </div>
+  </section>
     <!-- END SECCIÓN 4 -->
     
     <!-- BEGIN SECCIÓN 5 -->
@@ -292,25 +338,25 @@
         <div class="col-lg-6" data-aos="fade-up" data-aos-duration="3000">
           <div class="main-carousel ">
             <div class="carousel-cell">
-              <img class="carousel-cell-image" data-flickity-lazyload="./img/bateria.png" />
-              <!-- <picture class="carousel-cell-image">
-                <source srcset="./img/icon/garantia-tesla.webp" type="image/webp" alt="Tesla Garantía" title="Tesla Garantía" class="img-fluid" loading="lazy"> 
-                <img src="./img/icon/garantia-tesla.png" alt="Tesla Garantía" class="img-fluid pb-3" loading="lazy">
-              </picture> -->
+              <!-- <img class="carousel-cell-image" data-flickity-lazyload="./img/bateria.png" /> -->
+              <picture class="carousel-cell-image">
+                <source srcset="./img/bateria.webp" type="image/webp" alt="Tesla Batería" title="Tesla Batería" class="img-fluid" loading="lazy"> 
+                <img src="./img/bateria.png" alt="Tesla Batería" class="img-fluid pb-3" loading="lazy">
+              </picture>
             </div>
             <div class="carousel-cell">
-              <img class="carousel-cell-image" data-flickity-lazyload="./img/solarpanel.png" />
-              <!-- <picture class="carousel-cell-image">
-                <source srcset="./img/icon/garantia-tesla.webp" type="image/webp" alt="Tesla Garantía" title="Tesla Garantía" class="img-fluid" loading="lazy"> 
-                <img src="./img/icon/garantia-tesla.png" alt="Tesla Garantía" class="img-fluid pb-3" loading="lazy">
-              </picture> -->
+              <!-- <img class="carousel-cell-image" data-flickity-lazyload="./img/solarpanel.png" /> -->
+              <picture class="carousel-cell-image">
+                <source srcset="./img/solarpanel.png" type="image/webp" alt="Solar Panel Tesla" title="Solar Panel Tesla" class="img-fluid" loading="lazy"> 
+                <img src="./img/solarpanel.png" alt="Solar Panel Tesla" class="img-fluid" loading="lazy">
+              </picture>
             </div>
             <div class="carousel-cell">
-              <img class="carousel-cell-image" data-flickity-lazyload="./img/garantia-tesla.png" />
-              <!-- <picture class="carousel-cell-image">
-                <source srcset="./img/icon/garantia-tesla.webp" type="image/webp" alt="Tesla Garantía" title="Tesla Garantía" class="img-fluid" loading="lazy"> 
-                <img src="./img/icon/garantia-tesla.png" alt="Tesla Garantía" class="img-fluid pb-3" loading="lazy">
-              </picture> -->
+              <!-- <img class="carousel-cell-image" data-flickity-lazyload="./img/garantia-tesla.png" /> -->
+              <picture class="carousel-cell-image">
+                <source srcset="./img/garantia-tesla.webp" type="image/webp" alt="Tesla Garantía" title="Tesla Garantía" class="img-fluid" loading="lazy"> 
+                <img src="./img/garantia-tesla.png" alt="Tesla Garantía" class="img-fluid" loading="lazy">
+              </picture>
             </div>
           </div>
         </div>
@@ -338,7 +384,7 @@
         <h3 class="text-primary text-center font-weight-bold mb-3">Sofía<br>Torres</h3>
         <p>He tenido la oportunidad de comunicarme con el equipo de otras empresas de energía solar, pero ninguna fue como con estos especialistas.</p>
       </div>
-      <div class="col-lg-3 border rounded p-5 shadow">
+      <div class="col-lg-3 border rounded p-5 shadow mb-lg-0 mb-5">
         <picture>
           <source srcset="./img/testimonios/miguel-colon.webp" type="image/webp" alt="Miguel Colón" title="Miguel Colón" class="img-fluid rounded-circle mb-3" loading="lazy"> 
           <img src="./img/testimonios/miguel-colon.jpg" alt="Miguel Colón" class="img-fluid rounded-circle mb-3" loading="lazy">
@@ -346,7 +392,7 @@
         <h3 class="text-primary text-center font-weight-bold mb-3">Miguel<br>Colón</h3>
         <p>Desde el primer momento en comunicarme con el equipo hasta la instalación del sistema Tesla en mi hogar, todo ha sido muy profesional. ¡Finalmente conseguí a las personas indicadas!</p>
       </div>
-      <div class="col-lg-3 border rounded p-5 shadow mb-lg-0 mb-5">
+      <div class="col-lg-3 border rounded p-5 shadow">
         <picture>
           <source srcset="./img/testimonios/angelica-castillo.webp" type="image/webp" alt="Ángela Rodríguez" title="Ángela Rodríguez" class="img-fluid rounded-circle mb-3" loading="lazy"> 
           <img src="./img/testimonios/angelica-castillo.jpg" alt="Ángela Rodríguez" class="img-fluid rounded-circle mb-3" loading="lazy">
@@ -358,11 +404,55 @@
   </section>
   <!-- END SECCIÓN 6 -->
 
+  <section id="S7" class="container p-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-8">
+        <h3 class="text-secondary text-center font-weight-bold mb-4 text-shadow h1">Conjuntos Residenciales</h3>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-lg-6 mb-lg-3 mb-5" data-aos="fade-up" data-aos-duration="3000">
+        <picture>
+          <source srcset="./img/residencial/sr-7.webp" type="image/webp" alt="Conjunto Residencial 7" title="Conjunto Residencial 7" class="img-fluid" loading="lazy">
+          <img src="./img/residencial/sr-7.jpg" alt="Conjunto Residencial 7" class="img-fluid shadow-lg" loading="lazy">
+        </picture>
+      </div>
+      <div class="col-lg-6 mb-lg-3 mb-5" data-aos="fade-up" data-aos-duration="3000">
+        <picture>
+          <source srcset="./img/residencial/sr-1.webp" type="image/webp" alt="Conjunto Residencial 1" title="Conjunto Residencial 1" class="img-fluid" loading="lazy">
+          <img src="./img/residencial/sr-1.jpg" alt="Conjunto Residencial 1" class="img-fluid shadow-lg" loading="lazy">
+        </picture>
+      </div>
+      <div class="col-lg-6 mb-lg-3 mb-5" data-aos="fade-up" data-aos-duration="3000">
+        <picture>
+          <source srcset="./img/residencial/sr-3.webp" type="image/webp" alt="Conjunto Residencial 3" title="Conjunto Residencial 1" class="img-fluid" loading="lazy">
+          <img src="./img/residencial/sr-3.jpg" alt="Conjunto Residencial 3" class="img-fluid shadow-lg" loading="lazy">
+        </picture>
+      </div>
+      <div class="col-lg-6 mb-lg-3 mb-5" data-aos="fade-up" data-aos-duration="3000">
+        <picture>
+          <source srcset="./img/residencial/sr-4.webp" type="image/webp" alt="Conjunto Residencial 4" title="Conjunto Residencial 4" class="img-fluid" loading="lazy">
+          <img src="./img/residencial/sr-4.jpg" alt="Conjunto Residencial 4" class="img-fluid shadow-lg" loading="lazy">
+        </picture>
+      </div>
+      <div class="col-lg-6 mb-lg-3 mb-5" data-aos="fade-up" data-aos-duration="3000">
+        <picture>
+          <source srcset="./img/residencial/sr-5.webp" type="image/webp" alt="Conjunto Residencial 5" title="Conjunto Residencial 5" class="img-fluid" loading="lazy">
+          <img src="./img/residencial/sr-5.jpg" alt="Conjunto Residencial 5" class="img-fluid shadow-lg" loading="lazy">
+        </picture>
+      </div>
+      <div class="col-lg-6 mb-lg-3 mb-5" data-aos="fade-up" data-aos-duration="3000">
+        <picture>
+          <source srcset="./img/residencial/sr-6.webp" type="image/webp" alt="Conjunto Residencial 6" title="Conjunto Residencial 6" class="img-fluid" loading="lazy">
+          <img src="./img/residencial/sr-6.jpg" alt="Conjunto Residencial 6" class="img-fluid shadow-lg" loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </section>
   <!-- BEGIN FOOTER -->
   <footer id="footer" class="container-fluid mt-5 py-3 px-5 bg-dark">
     <div class="row align-items-center justify-content-center">
       <div class="col-lg-3 text-lg-left text-center font-weight-small text-light order-lg-1 order-2 mb-lg-0 mb-5">
-        <p class="mb-0"><small>Consultores Pura Energía LLC. <script>document.write(new Date().getFullYear())</script></small></p>
+        <p class="mb-0"><small>Consultores Pura Energía LLC. <span id="date"></span></small></p>
         <a class="d-block text-light" href="tel:17877959235"><small>+1 787 795 9235</small></a>
         <a class="d-block text-light" href="mailto:consultorespuraenergia@gmail.com"><small>consultorespuraenergia@gmail.com</small></a>
         <a class="d-block text-light" href="./politicas"><small>Políticas de Privacidad</small></a>

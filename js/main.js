@@ -44,11 +44,17 @@ function strictValidation(input) {
 function clearPhone(phone) {
   phone.forEach(el => el.value = el.value.replace('/ |[a-zA-Z]|-|(|)/g', ''));
 }
-
+// BEGIN Get data from
+function getFrom(){
+  let params = new URLSearchParams(location.search);
+  return params.get('from');
+}
+// END Get data From
 function dataToSheet(form, url){
   let data = new FormData(form);
   console.log('Enviando...');
   data.append("date", new Date());
+  data.append("from", getFrom());
   fetch(url, { method: 'POST', body: data})
   .then(response => {
     console.log('Success!', response);
@@ -154,18 +160,17 @@ let validation = Array.prototype.filter.call(forms, function(form) {
 });
 // END Bootstrap Validación
 
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
+// BEGIN Flickity
+let elem = document.querySelector('.main-carousel');
+let flkty = new Flickity( elem, {
   // options
   prevNextButtons: false,
   pageDots: false,
   contain: true,
-  lazyLoad: true,
+    
   fullscreen: true,
 });
-
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.main-carousel', {
-  // options
-});
+// END Flickity
+// BEGIN date
+document.getElementById('date').innerHTML = new Date().getFullYear();
+// END date
