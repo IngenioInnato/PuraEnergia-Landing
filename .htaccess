@@ -180,6 +180,17 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 Header append Vary User-Agent
 </IfModule>
 
+
+SetOutputFilter DEFLATE
+Header unset ETag
+FileETag None
+<FilesMatch "\.(js|css|ico|pdf|jpg|jpeg|png|gif|webp)$">
+Header set Cache-Control "public"
+Header set Expires "Thu, 15 Apr 2021 20:00:00 GMT"
+Header set Cache-Control "max-age=31536000"
+Header unset Last-Modified
+</FilesMatch>
+
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php73” package as the default “PHP” programming language.
 <IfModule mime_module>

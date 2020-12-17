@@ -48,11 +48,20 @@ a:focus, button:focus, div:focus, input:focus, form:focus {
 }
 // END GENERAL
 // BEGIN intl-tel-input
-.iti__flag {background-image: url("../node_modules/intl-tel-input/build/img/flags.png");}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .iti__flag {background-image: url("../node_modules/intl-tel-input/build/img/flags@2x.png");}
+.iti__flag {
+  background-image: url("../node_modules/intl-tel-input/build/img/flags.webp");
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url("../node_modules/intl-tel-input/build/img/flags@2x.webp");
+  }
+  .no-webp {
+    background-image: url("../node_modules/intl-tel-input/build/img/flags.png");
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url("../node_modules/intl-tel-input/build/img/flags@2x.png");
+    }
+    
+  }
 }
+
 
 .iti{
   width: 100%;
@@ -118,3 +127,4 @@ a:focus, button:focus, div:focus, input:focus, form:focus {
   max-height: 100%;
 }
 // END Flickyti
+
