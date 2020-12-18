@@ -174,10 +174,12 @@ let flkty = new Flickity( elem, {
   fullscreen: true,
 });
 // END Flickity
+
 // BEGIN date
 document.getElementById('date').innerHTML = new Date().getFullYear();
 // END date
 
+// BEGIN Video Modal
 $('#myModal').on('hidden.bs.modal', function (e) {
   $(".embed-responsive").html('');
 })
@@ -191,9 +193,13 @@ $('#myModal').on('shown.bs.modal', function (e) {
   allowfullscreen></iframe>
   `);
 })
+// END Video Modal
 
-
-let loader = document.getElementById("loader");
+// BEGIN Loader
+const loader = document.getElementById('loader');
 document.addEventListener("DOMContentLoaded", () => {
-  loader.style.display = none;
+  loader.style.visibility = 'hidden';
+  loader.style.opacity = '0';
+  setTimeout(() => $('#loader').addClass('d-none').removeClass('d-flex'), 3000);
 });
+// END Loader
